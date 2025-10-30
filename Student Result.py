@@ -16,7 +16,6 @@ class student(object):
             print("Pass")
         else:
             print("Fail")
-
 obj=student(name=input("Enter Name:"),marks=int(input("Enter Marks:")))
 obj.result()
 obj1=student(name=input("Enter Name:"),marks=int(input("Enter Marks:")))
