@@ -7,7 +7,11 @@
 #Create two employees, show final salaries, update bonus rate, and show again.
 
 class Employee:
-    def __init__(self,name,salary):
-        self.name=name
-        self.salary=salary
+    bonus_rate=0.1
+    def __init__(self, name, base_salary):
+        self.name = name
+        self.base_salary = base_salary
+    def final_salary(self):
+        return self.base_salary + self.bonus_rate
+
 
