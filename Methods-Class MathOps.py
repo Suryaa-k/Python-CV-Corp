@@ -9,10 +9,10 @@ class MathOps:
         if num % 2 == 0:
             return True
         return False
-MathOps.is_even(5)
+
 print(MathOps.is_even(5))
-Ob1=MathOps(10)
-print(Ob1.is_even(Ob1.num))
+Obj1=MathOps(10)
+print(Obj1.is_even(Obj1.num))
 
 
 

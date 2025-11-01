@@ -17,14 +17,19 @@ class Course:
         return cls.total_students
     @staticmethod
     def is_eligible(age):
-        return age >= 18
+        if age >= 18:
+            return True
+        return False
+
 c1=Course("C1")
 c2=Course("C2")
+age=int(input("Enter Age:"))
 c1.enroll()
 c1.enroll()
+c2.enroll()
 print(Course.show_students())
 print(c1.total_students)
-print(c1.show_students())
+print(c2.show_students())
 
 
 

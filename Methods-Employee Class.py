@@ -12,6 +12,23 @@ class Employee:
         self.name = name
         self.base_salary = base_salary
     def final_salary(self):
-        return self.base_salary + self.bonus_rate
+        return self.base_salary + (self.base_salary * Employee.bonus_rate)
+    @classmethod
+    def update_bonus(cls,new_rate):
+        cls.update_salary=new_rate
+
+    @staticmethod
+    def is_valid_salary(salary):
+        return salary >= 0
+Emp1 = Employee("Surya", 10000)
+Emp2 = Employee("Anish", 20000)
+
+Employee.update_bonus(0.2)
+print(Emp1.final_salary())
+print(Emp2.final_salary())
+
+print(Employee.is_valid_salary(Emp1.base_salary))
+print(Employee.is_valid_salary(-100))
+
 
 
